@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>odNest Mail - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Manage your odNest campaigns with ease" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="card auth-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <img src="logo.png" alt="OdNest Logo" class="logo-image" />
+          </div>
+          <h1>Welcome Back</h1>
+          <p class="subtitle">Manage your campaigns with ease</p>
+        </div>
+        
+        <form id="login-form" class="auth-form">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+                <path d="M16 2v4" />
+                <path d="M8 2v4" />
+                <path d="M3 10h18" />
+              </svg>
+              <input type="email" id="email" name="email" placeholder="name@odnest.com" required />
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <label for="password">Password</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <input type="password" id="password" name="password" placeholder="••••••••" required />
+            </div>
+          </div>
+          
+          <div id="error-message" class="error-message hidden"></div>
+          
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Log in</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+        </form>
+        
+        <div class="card-footer">
+          <p>Don't have an account? <a href="signup.html" class="link">Sign up</a></p>
+        </div>
+      </div>
+      <div class="page-footer">
+        <p>&copy; 2026 odNest Mail. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
